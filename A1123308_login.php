@@ -1,5 +1,5 @@
 <?php
-if(isset($_COOKIE["userName"])){
+if(isset($_COOKIE["userName"])){          //檢查cookie是否存在
     echo "歡迎回來". $_COOKIE["userName"];
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); 
 ?>
 
 <html>
@@ -15,7 +15,7 @@ if(isset($_SESSION["check"]) && $_SESSION["check"]==2){
     echo "</center>";
 
     echo "<h3>活動流程</h3>";
-    echo "<table border='1' width='400'>";
+    echo "<table border='1' width='400'>";   // 表格邊框
     echo "<tr><td>12:00-13:00</td><td>報到、午餐</td></tr>";
     echo "<tr><td>13:10-13:40</td><td>資管系系所、課程和師資介紹</td></tr>";
     echo "<tr><td>13:40-14:00</td><td>破冰小遊戲</td></tr>";
@@ -56,7 +56,7 @@ if(isset($_SESSION["check"]) && $_SESSION["check"]==2){
 
 }else{
     echo "<center>非法使用者，兩秒後進入登入頁面</center>";
-    header("Refresh:2 ; url='A1123308_login.php'");
+    header("Refresh:2 ; url='A1123308_login.php'");     //停幾秒，去到登入頁
 }
 ?>
 
